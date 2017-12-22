@@ -20,7 +20,17 @@ let x = setInterval(function() {
   let weeks = Math.round(days / 7 * 10) / 10;
 
   // Display result.
-  document.getElementById('countDown').innerHTML =
+  document.getElementById('months').innerHTML =
+  months + " Months<br>" +
+  weeks + " Weeks<br>" +
+  days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+  document.getElementById('weeks').innerHTML =
+  months + " Months<br>" +
+  weeks + " Weeks<br>" +
+  days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+
+  document.getElementById('days').innerHTML =
   months + " Months<br>" +
   weeks + " Weeks<br>" +
   days + "d " + hours + "h " + minutes + "m " + seconds + "s";
