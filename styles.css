@@ -1,4 +1,5 @@
 body {
+  font-family: 'Pacifico', cursive;
   background-color: #131313;
   color: white;
   height: 100%;
@@ -6,16 +7,12 @@ body {
 }
 
 .main {
-  /* width: 50em; */
-  /* background-color: #232323; */
-  /* height: 95vh; */
   padding: 1em;
   padding-top: .5em;
   position: relative;
-  /* left: 30%; */
 }
 
-.dateCircle {
+.dateCircle, .orCircle {
   background-color: #232323;
   border-radius: 50%;
   overflow: hidden;
@@ -29,7 +26,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.date {
+h1, h3 {
+  user-select: none;
+}
+
+.date, p {
+  margin: 0;
   font-size: 2em;
   user-select: none;
 }
@@ -39,25 +41,42 @@ body {
 }
 
 h1 {
-  margin-top: 0;
+  margin: 0;
 }
 
 h3 {
   display: inline;
 }
 
+p {
+  margin-top: -.1em;
+}
+
 #dateText {
   color: red;
   margin-bottom: 1em;
-  margin-left: .2em;
+  margin-left: .3em;
+}
+
+#leftOrCircle, #rightOrCircle {
+  background-color: #341515;
+  line-height: 5em;
+  margin-top: 18em;
+  width: 5em;
+  height: 5em;
+  left: calc(35% - 2.5em);
+}
+
+#rightOrCircle {
+  left: calc(65% - 2.5em)
 }
 
 #monthsCircle {
-  left: 2em;
+  left: calc(20% - 10em);
 }
 
 #monthsCircle:hover {
-  background-color: #553555;
+  background-color: #352555;
 }
 
 #weeksCircle {
@@ -65,11 +84,11 @@ h3 {
 }
 
 #weeksCircle:hover {
-  background-color: #253555;
+  background-color: #154565;
 }
 
 #daysCircle {
-  left: calc(100% - 22em)
+  left: calc(80% - 10em)
 }
 
 #daysCircle:hover {
