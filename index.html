@@ -5,8 +5,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Main hub</title>
+  <title>Flight Countdown</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/png" href="resources/favicon.png"/>
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <script src="scripts.js"></script>
 </head>
@@ -18,18 +19,21 @@
   <div class="main">
     <h1>Flight Countdown</h1>
     <h3>Time until</h3><h3 id="dateText">Jun 10, 2018 01:35</h3>
-    <div class="dateCircle" id="monthsCircle">
-      <div class="date" id="months">Months</div></div>
+    <div class="dateCircle" id="monthsCircle" onclick="monthsExpand();">
+      <div class="date" id="months"></div>
+      <div class="dateExpanded" id="monthsExpanded"></div></div>
 
     <div class="orCircle" id="leftOrCircle"><p>or</p></div>
 
-    <div class="dateCircle" id="weeksCircle">
-      <div class="date" id="weeks">Weeks</div></div>
+    <div class="dateCircle" id="weeksCircle" onclick="weeksExpand();">
+      <div class="date" id="weeks"></div>
+      <div class="dateExpanded" id="weeksExpanded"></div></div>
 
     <div class="orCircle" id="rightOrCircle"><p>or</p></div>
 
-    <div class="dateCircle" id="daysCircle">
-      <div class="date" id="days">Days</div></div>
+    <div class="dateCircle" id="daysCircle" onclick="daysExpand();">
+      <div class="date" id="days"></div>
+      <div class="dateExpanded" id="daysExpanded"></div></div>
   </div>
 </body>
 

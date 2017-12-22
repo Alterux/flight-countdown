@@ -26,7 +26,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-h1, h3 {
+h1, h3, .dateExpanded {
   user-select: none;
 }
 
@@ -36,8 +36,13 @@ h1, h3 {
   user-select: none;
 }
 
-.date:hover {
+.date:hover, .dateExpanded:hover {
     cursor: pointer;
+}
+
+.dateExpanded {
+  margin-top: -8em;
+  line-height: 1.5em;
 }
 
 h1 {
@@ -56,6 +61,10 @@ p {
   color: red;
   margin-bottom: 1em;
   margin-left: .3em;
+}
+
+#monthsExpanded, #weeksExpanded, #daysExpanded {
+  display: none;
 }
 
 #leftOrCircle, #rightOrCircle {
