@@ -1,0 +1,27 @@
+body {
+  background-color: #131313;
+  color: white;
+  height: 100%;
+  margin-top: 0;
+}
+
+.main, .reddit {
+  width: 50em;
+  background-color: #232323;
+  height: 95vh;
+  padding: 1em;
+  padding-top: .5em;
+  position: relative;
+}
+
+.main {
+  float:right;
+}
+
+.reddit {
+  float: left;
+}
+
+h1 {
+  margin-top: 0;
+}
