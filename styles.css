@@ -5,10 +5,6 @@ body {
   margin-top: 0;
 }
 
-div {
-  padding-bottom: 1em;
-}
-
 .main {
   /* width: 50em; */
   /* background-color: #232323; */
@@ -22,6 +18,7 @@ div {
 .dateCircle {
   background-color: #232323;
   border-radius: 50%;
+  overflow: hidden;
   width: 20em;
   height: 20em;
   margin-top: 10em;
@@ -29,10 +26,16 @@ div {
   text-align: center;
   vertical-align: middle;
   line-height: 20em;
+  transition: background-color 0.3s ease;
 }
 
 .date {
   font-size: 2em;
+  user-select: none;
+}
+
+.date:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -53,10 +56,22 @@ h3 {
   left: 2em;
 }
 
+#monthsCircle:hover {
+  background-color: #553555;
+}
+
 #weeksCircle {
   left: calc(50% - 10em);
 }
 
+#weeksCircle:hover {
+  background-color: #253555;
+}
+
 #daysCircle {
   left: calc(100% - 22em)
+}
+
+#daysCircle:hover {
+  background-color: #255535;
 }

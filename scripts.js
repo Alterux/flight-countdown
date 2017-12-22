@@ -4,24 +4,6 @@ window.onload = function() {
 
   // Update countdown on a 1 sec interval.
   let x = setInterval(countDown(), 1000);
-
-  $("#monthsCircle").hover(function() {
-    $(this).css("background-color","#553555");
-  }, function() {
-    $(this).css("background-color","#232323");
-  });
-
-  $("#weeksCircle").hover(function() {
-    $(this).css("background-color","#253555");
-  }, function() {
-    $(this).css("background-color","#232323");
-  });
-
-  $("#daysCircle").hover(function() {
-    $(this).css("background-color","#255535");
-  }, function() {
-    $(this).css("background-color","#232323");
-  });
 }
 
 // Are the date circles expanded?
