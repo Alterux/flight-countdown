@@ -5,21 +5,13 @@ body {
   margin-top: 0;
 }
 
-.main, .reddit {
+.main {
   width: 50em;
   background-color: #232323;
   height: 95vh;
   padding: 1em;
   padding-top: .5em;
   position: relative;
-}
-
-.main {
-  float:right;
-}
-
-.reddit {
-  float: left;
 }
 
 h1 {
