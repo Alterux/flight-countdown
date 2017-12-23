@@ -78,7 +78,7 @@ function countDown() {
     weeks + " Weeks<br>";
 
     document.getElementById('weeksExpanded').innerHTML =
-    (days % 7 + 1) + " Days<br>" +
+    (days % 7) + " Days<br>" +
     (hours + 1) + " Hours<br>" +
     minutes + " Minutes<br>" +
     seconds + " Seconds";
