@@ -44,7 +44,7 @@ function daysExpand() {
 }
 
 // Countdown date.
-let countDownDate = new Date("Jun 10, 2018 01:35:00").getTime();
+let countDownDate = new Date("Jun 22, 2018 08:00:00").getTime();
 
 function countDown() {
 
