@@ -72,7 +72,7 @@ function countDown() {
 
     document.getElementById('monthsExpanded').innerHTML =
     (days % daysInMonth) + " Days<br>" +
-    (hours + 1) + " Hours<br>" +
+    hours + " Hours<br>" +
     minutes + " Minutes<br>" +
     seconds + " Seconds";
 
@@ -82,7 +82,7 @@ function countDown() {
 
     document.getElementById('weeksExpanded').innerHTML =
     (days % 7) + " Days<br>" +
-    (hours + 1) + " Hours<br>" +
+    hours + " Hours<br>" +
     minutes + " Minutes<br>" +
     seconds + " Seconds";
 
@@ -91,7 +91,7 @@ function countDown() {
     days + " Days<br>";
 
     document.getElementById('daysExpanded').innerHTML =
-    (hours + 1) + " Hours<br>" +
+    hours + " Hours<br>" +
     minutes + " Minutes<br>" +
     seconds + " Seconds";
 
