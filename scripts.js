@@ -53,7 +53,6 @@ function countDown() {
   let currentMonth = new Date().getMonth() + 1;
   let currentYear = new Date().getFullYear();
   let daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
-  console.log(daysInMonth)
 
   // Distance between current and future date.
   let distance = countDownDate - now;
