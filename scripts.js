@@ -50,6 +50,9 @@ function countDown() {
 
   // Current date.
   let now = new Date().getTime();
+  let currentMonth = new Date().getMonth() + 1;
+  let currentYear = new Date().getFullYear();
+  let daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
 
   // Distance between current and future date.
   let distance = countDownDate - now;
@@ -68,7 +71,7 @@ function countDown() {
     months + " Months<br>";
 
     document.getElementById('monthsExpanded').innerHTML =
-    (days % 30 - 1) + " Days<br>" +
+    (days % daysInMonth) + " Days<br>" +
     (hours + 1) + " Hours<br>" +
     minutes + " Minutes<br>" +
     seconds + " Seconds";
